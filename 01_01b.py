@@ -3,7 +3,7 @@ from collections import Counter
 
 def count_words(paragraph):
     paragraph = paragraph.lower()
-    paragraph = paragraph.translate(str.maketrans('', '', string.punctuation))
+    paragraph = paragraph.translate(str.maketrans('', '', string.punctuation)) #translates all punctuation to nithing
 
     wordList = paragraph.split()
     counter = Counter(wordList)
